@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">PayPee FE</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_camera">Camera</string>
+    <string name="app_color">#FFA000</string>
+
+    <string name="curr_loc">&#xe600;</string>
+    <string name="add_dust">&#xe601;</string>
+    <string name="back">&#xe602;</string>
+    <string name="check">&#xe603;</string>
+    <string name="cross">&#xe604;</string>
+    <string name="sweep">&#xe605;</string>
+    <string name="recy">&#xe606;</string>
+    <string name="filter">&#xe607;</string>
+    <string name="locat">&#xe608;</string>
+    <string name="map">&#xe609;</string>
+    <string name="rating">&#xe60a;</string>
+    <string name="search">&#xe60b;</string>
+
+    <string name="upload">&#xe60c;</string>
+    <string name="take_photo">&#xe60d;</string>
+    <string name="review">&#xe60e;</string>
+</resources>

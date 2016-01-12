@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:gravity="center_vertical"
+        android:background="@color/splash_background"
+        android:orientation="horizontal" >
+        <co.jlabs.jaime.jaime.customcomponents.TextView_White
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:layout_marginLeft="4dp"
+            android:textSize="23sp"
+            android:text="@string/add_dust"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:text="Dustbins and Toilets"
+            android:textStyle="bold"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/done"
+            android:enabled="false"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/button_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:text="Done" />
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center"
+        android:text="Enter the name of new session" />
+    <EditText
+        android:id="@+id/session_name"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/get_loc"
+            android:background="@drawable/button_style"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:textColor="#fff"
+            android:layout_height="wrap_content"
+            android:text="Get My Location"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/lat"
+                android:visibility="gone"
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lat :0"/>
+            <TextView
+                android:id="@+id/lng"
+                android:padding="10dp"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lon : 0"/>
+        </LinearLayout>
+    </LinearLayout>
+    <CheckBox
+        android:id="@+id/toi"
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="It is a Toilet"/>
+    <CheckBox
+        android:id="@+id/dus"
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="It is a Dustbin"/>
+
+    <LinearLayout
+        android:id="@+id/toilet"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="10dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please Select Toilet Type"/>
+        <CheckBox
+            android:id="@+id/uri"
+            android:padding="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="It is a Urinal"/>
+        <CheckBox
+            android:id="@+id/ctc"
+            android:padding="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="It is a CTC"/>
+        <LinearLayout
+            android:id="@+id/ques"
+            android:visibility="gone"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:padding="10dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Simple Questions"/>
+            <CheckBox
+                android:id="@+id/flush"
+                android:padding="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Flush is Available"/>
+            <CheckBox
+                android:id="@+id/run_water"
+                android:padding="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Running Water is Available"/>
+            <CheckBox
+                android:id="@+id/mirror"
+                android:padding="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mirror is Available"/>
+            <CheckBox
+                android:id="@+id/odour"
+                android:padding="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Airwick odour Available"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+    </ScrollView>
+</LinearLayout>

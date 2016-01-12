@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:gravity="center_vertical"
+        android:background="@color/splash_background"
+        android:orientation="horizontal" >
+        <co.jlabs.jaime.jaime.customcomponents.TextView_White
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:layout_marginLeft="4dp"
+            android:textSize="23sp"
+            android:text="@string/add_dust"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:text="Dustbins and Toilets"
+            android:textStyle="bold"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/new_session"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center"
+        android:background="#f3f3f3"
+        android:textColor="#566"
+        android:text="Tap Here to Add New" />
+<ListView
+    android:id="@+id/listView"
+    android:layout_width="match_parent"
+    android:background="#c3c3c3"
+    android:layout_height="fill_parent"/>
+</LinearLayout>
